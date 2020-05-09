@@ -1,0 +1,18 @@
+import random
+random.seed(3)#added to contant the random value
+ 
+a1=['cat','rat','mat','sat','lat']
+a2=a1[::-1]#copied the a1 array and shuffled
+
+random.shuffle(a2)
+list(zip(a1,a2))
+
+#mapping=dict(zip(a2,range(len(a1))))# 2 diif. way of making a dict via 2 different arrays
+mapping={a2[x]:x for x in range(len(a2))}#this method is same as itertation after initilzing the blank dictionary variable.
+ohc=[]
+for c in a1:
+  arr=list(np.zeros(len(a1),dtype=int))
+  arr[mapping[c]]=1    # intitializing the vlaue with the application of dictionary
+  ohc.append(arr)
+
+ohc
