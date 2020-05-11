@@ -1,0 +1,3 @@
+import numpy as np
+x=int(input('Enter the number :'))
+print ( np.eye(x),'\n',np.identity(x),'\n',np.zeros((x,x)),'\n')
