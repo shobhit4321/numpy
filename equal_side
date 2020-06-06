@@ -1,0 +1,21 @@
+def equal_sides(arr):
+    """
+    Inputs:
+        arr: list of ints
+    Outputs:
+        ind: int, index of list where left-sum is equal to right-sum, -1 otherwise
+    """
+    
+    ind=None
+    # YOUR CODE HERE
+    for i in range(len(arr)):
+      left_sum=sum(arr[:i+1])
+      right_sum=sum(arr[i:])
+      if (left_sum==right_sum):
+        ind= i
+      else:
+        pass
+    if (ind==None):
+     ind=-1
+    
+    return ind
