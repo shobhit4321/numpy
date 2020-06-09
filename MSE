@@ -1,0 +1,12 @@
+def compute_mse(y, yd):
+    '''
+    Inputs:
+        y: np vector of shape (N,); y=Aw
+        yd: np vector of shape (N,); yd=f(x), ie., desired or true value
+    Output:
+        mse: mean squared error
+    '''
+    ### BEGIN SOLUTION
+    mse = (y-yd).dot(y-yd)/y.shape[0]
+    ### END SOLUTION
+    return mse
